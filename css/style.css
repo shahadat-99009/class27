@@ -1,0 +1,469 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+:root{
+    --hfont:'Oswald', sans-serif;
+    --pfont:  'Open Sans', sans-serif;
+    --brncol:#e23e38;
+    --hcol:#353535;
+    --title:#555555;
+    --teambg:#dddddddd;
+    --pcil: #f1f1f1;
+}
+ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+ul{
+    list-style: none;
+} 
+
+.heading h3{
+    font-family: var(--hcol);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.heading img{
+    margin-top: -24px;
+}
+
+                       /*=====================
+                        common css ends 
+                        ========================*/
+
+    .navbar {
+    background-color: rgba(53, 53, 53, 0.25)  !important;
+   position: absolute;
+   top: 30px;
+   left: 0;
+   z-index: 9999;
+   width: 100%;
+    }
+.navbar .navbar-brand{
+    background-color: #000000 !important;
+    padding: 10px 15px;
+    position: absolute;
+    padding: 10px 15px !important;
+    transform: skewx(-30deg);
+   
+   
+}
+.navbar .navbar-brand img{
+    transform: skewx(30deg);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-family: var(--hfont);
+    font-weight: 400;
+    font-size: 14px;
+     color: var(--brncol) !important;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    
+    
+
+} 
+ 
+.navbar .navbar-nav .nav-item .nav-link:last-child{
+    padding-right: 0;
+}
+.navbar .navbar-nav .nav-item .nav-link::after{
+    content: '';
+    height: 100%;
+    width:0;
+     background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all linear 0.4s;
+    border-bottom: 2px solid red;
+
+}
+.navbar .navbar-nav .nav-item .nav-link:hover::after{
+  width: 100%;
+}
+ 
+                     /*======================
+                                 navbar ends 
+                     ========================= */
+
+                     
+                     /* ========================
+                                banner start 
+                     ============================ */
+ 
+                                             
+ #banner .banner_item{
+     position: relative;
+     z-index: 9999;
+     padding-top: 255px;
+     padding-bottom: 115px;
+    
+ }    
+ #banner .banner_item::after{
+     content: '';
+     height: 100%;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.699);
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+ }
+                   
+#banner .bg1{
+    background: url(../images/banner1.jpg) no-repeat center / cover;
+}
+
+#banner .bg2{
+    background: url(..//images/banner2.jpg) no-repeat center / cover;
+}
+
+#banner .bg3{
+    background: url(../images/banner3.jpg) no-repeat center / cover;
+}
+#banner  .banner_item h4{
+    font-family: var(--hfont);
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    
+   
+}
+#banner .banner_item h1{
+    font-family: var(--hfont);
+    font-weight: 700;
+    font-size:60px;
+    text-transform: uppercase;
+    color: var(--brncol);
+    position: relative;
+}
+#banner .banner_item p{
+    font-family: var(--pfont);
+    font-weight: 400;
+    font-size:60px;
+    font-size: 13px;
+    color: var(--pcil);
+    padding: 0 50px;
+    position: relative;
+    
+}
+
+#banner .banner_item a:hover{
+    border-color:var(--brncol) ;
+    box-shadow: 0 0 50px var(--brncol) !important;
+    transition-delay: 0.5s;
+}
+#banner .banner_item a{
+    font-family: var(--hfont);
+    font-weight: 500;
+    font-size:16px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+    overflow: hidden;
+    margin-top: 5px;
+ 
+}
+#banner .banner_item a:first-of-type{
+    margin-right: 22px;
+}
+#banner .banner_item a::after{
+    content: '';
+    height: 100%;
+    width: 50%;
+     position: absolute;
+     background-color: var(--brncol);
+     top: 0;
+     left: -50%;
+     z-index: -1;
+     transition: all linear 0.4s;
+}
+#banner .banner_item a:hover:after{
+ left: 0;
+}
+#banner .banner_item a::before{
+    content: '';
+    height: 100%;
+    width: 50%;
+     position: absolute;
+     background-color: var(--brncol);
+     right: -50%;
+     bottom: 0;
+     z-index: -1;
+     transition: all linear 0.4s;
+
+}
+#banner .banner_item a:hover::before{
+ right: 0;
+}
+
+                          /* ========================
+                                banner start 
+                     ============================ */
+
+
+
+                     /* ============================
+                              befor afer start
+                      ============================== */
+                                         
+#banner  .bg1 h1::after{
+    content: '';
+    height: 200px;
+    width: 3px;
+    background-color: var(--brncol);
+    position: absolute;
+    top: -24px;
+    left: 0;
+    z-index: 1;
+}
+#banner  .bg1 h1::before{
+    content: '';
+    height: 200px;
+    width: 3px;
+    background-color: var(--brncol);
+    position: absolute;
+    top: -24px;
+    right: 0;
+    z-index: 1;
+}
+#banner  .bg1 h4::after{
+    content: '';
+    height: 3px;
+    width: 170px;
+    background-color: var(--brncol);
+    position: absolute;
+    top: 22px;
+     left: 0;
+    z-index: 1;
+}
+#banner  .bg1 h4::before{
+    content: '';
+    height: 3px;
+    width: 136px;
+    background-color: var(--brncol);
+    position: absolute;
+    top: 22px;
+     right: 0;
+    z-index: 1;
+}
+#banner  .bg1 p::after{
+    content: '';
+    height: 3px;
+    width: 108px;
+    background-color: var(--brncol);
+    position: absolute;
+    top: 91px;
+     left: 0;
+    z-index: 1;
+}
+#banner  .bg1 p::before{
+    content: '';
+    height: 3px;
+    width: 82px;
+    background-color: var(--brncol);
+    position: absolute;
+    top: 91px;
+     right: 0;
+    z-index: 1;
+}
+                   
+ 
+                      
+                     /* ============================
+                              befor afer ends
+                ============================== */
+
+                /* arrows start  */
+  
+ #banner  .prev_arrow {
+     color: #e23e38;
+     height: 40px;
+     width: 40px;
+     line-height: 40px;
+     border-radius: 50%;
+     border: 1px solid var(--brncol);
+     text-align: center;
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+   left: 20%;
+   z-index: 11;
+ }  
+ #banner .next_arrow{
+     height: 40px;
+     width: 40px;
+     color: #e23e38;
+     line-height: 40px;
+     text-align: center;
+     border: 1px solid var(--brncol);
+     border-radius: 50%;
+     z-index: 1222;
+     position: absolute;
+     top: 50%;
+     right: 20%;
+ }            
+                /*================
+                    arrows ends 
+                 ================== */
+
+                 /*=====================
+                         dots start
+                  ====================== */
+#banner .slick-dots li button{
+    font-size: 0;
+    border: none;
+    outline: none;
+}
+
+#banner .slick-dots li{
+    height: 17px;
+    width: 17px;
+    border: 1px solid orangered;
+    border-radius:50% ;
+    margin-right: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+  
+
+
+}
+#banner .slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+}
+#banner .slick-dots li:last-child{
+    margin-right: 0px;
+}
+#banner .slick-dots li.slick-active{
+    background-color: orangered;
+    color: orangered;
+}
+
+                   /*=====================
+                         dots start
+                  ====================== */
+
+                   /*=====================
+                        about start
+                  ====================== */
+#about .about_img img{
+    width: 100%;
+}
+#about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#about .about_img{
+    position: relative;
+
+}
+#about .about_img .about_overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .about_img .about_overlay .icon a i{
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color: var(--brncol);
+    color: var(--hcol);
+    border-radius: 50%;
+    font-size: 26px;
+}
+
+#about .about_text p{
+    font-family: var(--pfont);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 55px;
+    
+ 
+}
+
+
+
+                   /*=====================
+                      about ends
+                  ====================== */ 
+
+                  /*=====================
+                         gallery start=
+                   ===================== */
+
+
+      #gallery .gallery_bg{
+           background: url(../images/gallery.png) no-repeat center / cover;
+           position: relative;
+           z-index: 1;
+           padding-top: 30px;
+      }
+      #gallery .gallery_bg::after{
+          content: '';
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.808);
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+      }
+      #gallery .gallery_bg .gallery_item{
+          margin-bottom: 30px;
+      }
+      #gallery .gallery_bg .gallery_item figure{
+          position: relative;
+          z-index: 99;
+      }
+      #gallery .gallery_bg .gallery_item  .gallery_overlay{
+          height: 100%;
+          width: 100%;
+          background-color:  rgba(255, 68, 0, 0.767);
+          position: absolute;
+         top: 0;
+         left: 0;
+         border: 5px solid rgba(255, 255, 255, 0.568);
+         transform: scale(0.95);
+         opacity: 0;
+         transition: all linear 0.4s;
+         
+      }
+
+      
+      #gallery .gallery_bg .gallery_item:hover  .gallery_overlay{
+          opacity: 1;
+      }
+      #gallery .gallery_bg .gallery_item figure .gallery_overlay i{
+          color: white;
+          font-size: 24px;
+      }
